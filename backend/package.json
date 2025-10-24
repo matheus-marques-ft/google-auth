@@ -1,0 +1,27 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "google workspace auth system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pkce-challenge": "^5.0.0",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

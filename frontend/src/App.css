@@ -1,0 +1,170 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+/* If the user is logged in, the App-header should not take the full height */
+.App:has(.userInfo) .App-header {
+    min-height: calc(100vh - 70px); /* Adjust 70px to match header height */
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #357ae8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+  height: 70px; /* Set a fixed height */
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.userInfo span {
+  margin-right: auto;
+  font-size: 1.2rem;
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.logout-btn svg {
+  width: 24px;
+  height: 24px;
+  color: #d9534f;
+  transition: color 0.2s;
+}
+
+.logout-btn:hover svg {
+  color: #a94442;
+}
+
+.login-card {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.company-logo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.login-card p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #555555;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px 30px;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center; /* Center the text inside the card */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #4285F4;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #333333;
+}
